@@ -1,0 +1,18 @@
+https://cses.fi/problemset/task/1072
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+long long n;cin>>n;
+for(long long i=1;i<=n;++i)
+{
+   long long totalcombo=((i*i)*((i*i)-1))/2;
+   long long attacking=4*(i-1)*(i-2);
+   long long ans=totalcombo-attacking;
+   cout<<ans<<endl;
+}
+
+
+return 0;
+}
