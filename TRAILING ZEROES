@@ -1,0 +1,21 @@
+https://cses.fi/problemset/task/1618/
+
+
+#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+ 
+int main()
+{
+  //cout<<"enter the number: ";
+    int n;cin>>n;
+    int cnt=0;
+    while(n>0)
+    {
+       n/=5;
+       cnt+=n;
+ 
+    }
+   cout<<cnt<<endl;
+return 0;
+}
